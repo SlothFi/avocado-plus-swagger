@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Avocado+ API
-  description: Documentation of the Avocado+ API Functions. All API Functions must called from https://api.avocado.gallery
+  description: Documentation of the Avocado+ API Functions. All API Functions must be called from https://api.avocado.gallery
   contact:
     name: 0xGhosty
     url: https://slothfi.com
@@ -13,8 +13,8 @@ paths:
     get:
       tags:
         - CancelAddressReservation
-      summary: Cancels a address reservation
-      description: When call call this API, the reservation of all nfts dedicated to this address will released to free state. This function can be called, when a user closes his browser or when he hit on a "Cancel Reservation" Button
+      summary: Cancels an address that was initially reserved.
+      description: When we call this API, the reservation of all nfts dedicated to this address will released to free state. This function can be called, when a user closes his browser or when he hit on a "Cancel Reservation" Button
       parameters:
         - name: apikey
           in: path
@@ -148,7 +148,7 @@ paths:
       tags:
         - CreateProject
       summary: Creates a new Project
-      description: WIth this Controller you can create a new project
+      description: With this Controller you can create a new project
       parameters:
         - name: apikey
           in: path
